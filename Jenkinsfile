@@ -6,5 +6,10 @@ pipeline {
         sh 'echo "test"'
       }
     }
+    stage('deploy') {
+      steps {
+        sh 'make'
+      }
+    }
   }
 }
